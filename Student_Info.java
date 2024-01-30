@@ -1,8 +1,7 @@
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-
-class Student  {
+ class Student extends StudentCourse  {
     public String name;
     public String dob;
 
@@ -23,9 +22,14 @@ class Student  {
 
     public static void main(String[] args) {
         Student s=new Student();
-         s.name = "Sangeetha.M";
+        StudentCourse s1 = new StudentCourse();
+         s.name = "Spandana n";
         s.displayName();
         s.displayAge("09-02-2004");
+        s1.displayStudentcourses();
+        s1.displayStudentMarks();
+
+
         
 
         
